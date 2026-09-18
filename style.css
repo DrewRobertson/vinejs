@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	font-family: system-ui, -apple-system, sans-serif;
+	background-color: #f4f0ea;
+	min-height: 100vh;
+}
+
+.homepage-container {
+	position: relative;
+	width: 100%;
+}
+
+.site-section {
+	height: 33vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+/* FIX: Outer sections sit back at z-index 1 so they don't hide the background vine texture */
+.unique-block-1 {
+	background-color: rgba(243, 222, 196, 0.4);
+	z-index: 1;
+}
+
+/* FIX: The middle block sits forward at z-index 3 to pass cleanly over the background vine */
+.unique-block-2 {
+	background-color: #f4f0ea;
+	z-index: 3;
+}
+
+.unique-block-3 {
+	background-color: rgba(243, 222, 196, 0.4);
+	z-index: 1;
+}
+
+.content-box {
+	text-align: center;
+	max-width: 600px;
+	z-index: 4;
+}
+

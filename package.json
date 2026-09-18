@@ -1,0 +1,47 @@
+{
+  "name": "organic-weaving-vine",
+  "version": "0.1.0",
+  "description": "A deterministic, procedural p5.js vine decoration for wrapping DOM sections.",
+  "license": "MIT",
+  "author": "Drew Robertson",
+  "type": "commonjs",
+  "main": "dist/vine.js",
+  "types": "dist/vine.d.ts",
+  "browser": "dist/vine.js",
+  "unpkg": "dist/vine.min.js",
+  "jsdelivr": "dist/vine.min.js",
+  "files": [
+    "dist",
+    "p5.min.js",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md"
+  ],
+  "scripts": {
+    "build": "tsc && terser dist/vine.js --compress --mangle --comments false --output dist/vine.min.js",
+    "prepublishOnly": "npm run build && npm test",
+    "check": "node --check dist/vine.js",
+    "test": "node --test tests/vine.test.js",
+    "test:browser": "node --test tests/browser.test.js"
+  },
+  "peerDependencies": {
+    "p5": ">=1.0.0"
+  },
+  "keywords": [
+    "p5.js",
+    "p5js",
+    "vine",
+    "canvas",
+    "dom",
+    "decoration",
+    "generative-art"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "terser": "^5.51.2",
+    "typescript": "^7.0.2"
+  }
+}

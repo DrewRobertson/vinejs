@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organic Weaving Vine</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- FIXED: Class moved to the parent wrapper so the loop can see all child sections -->
+	<div class="homepage-container vine-section-wrap">
+
+		<section class="site-section unique-block-1">
+			<div class="content-box">
+				<h1>Earthy Elements</h1>
+				<p>A calm, unbound sanctuary of design.</p>
+			</div>
+		</section>
+
+		<section class="site-section unique-block-2">
+			<div class="content-box">
+				<h1>Organic Flow</h1>
+				<p>Weaving art seamlessly around modern digital interfaces.</p>
+			</div>
+		</section>
+
+		<section class="site-section unique-block-3">
+			<div class="content-box">
+				<h1>Natural Harmony</h1>
+				<p>A balanced closure to the homepage grid layout.</p>
+			</div>
+		</section>
+	</div>
+
+	<script src="p5.min.js"></script>
+	<script src="dist/vine.js"></script>
+	<script>
+		// swoop: 0.75 = tighter edges, 1 = default, 1.3 = longer/deeper flourishes
+		Vine.mount('.unique-block-2', { swoop: 1 });
+	</script>
+</body>
+</html>
