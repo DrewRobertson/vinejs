@@ -4,6 +4,14 @@
   "description": "A deterministic, procedural p5.js vine decoration for wrapping DOM sections.",
   "license": "MIT",
   "author": "Drew Robertson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrewRobertson/vinejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DrewRobertson/vinejs/issues"
+  },
+  "homepage": "https://github.com/DrewRobertson/vinejs#readme",
   "type": "commonjs",
   "main": "dist/vine.js",
   "types": "dist/vine.d.ts",
